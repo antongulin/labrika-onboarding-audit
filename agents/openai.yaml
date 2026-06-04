@@ -1,0 +1,4 @@
+interface:
+  display_name: "Labrika Onboarding Audit"
+  short_description: "Run new-company Labrika audits cleanly"
+  default_prompt: "Use $labrika-onboarding-audit to add a company in Labrika, run desktop and mobile audits, and guide me through saving the reports."
