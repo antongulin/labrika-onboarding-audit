@@ -1,0 +1,16 @@
+AGENTS.md
+  h_189d15dd58c223 4-25
+docs/PROJECT.md
+  h_189d15dd58c223 69-83,88,92-93,95-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "abf098ed00ceef6c532c07040c2e6cbabc29cb2c",
+  "prompts": {},
+  "humans": {
+    "h_189d15dd58c223": {
+      "author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
