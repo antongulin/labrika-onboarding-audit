@@ -1,0 +1,4 @@
+# CodeGraph local index and daemon state; the MCP config files are committed.
+.codegraph/
+
+.DS_Store
