@@ -1,0 +1,29 @@
+.codex/config.toml
+  s_cc22aa131ead51::t_a9e59dc991a230 1-6
+.cursor/mcp.json
+  s_cc22aa131ead51::t_f6fb0c02c47501 1-12
+.gitignore
+  s_cc22aa131ead51::t_686d19c7f65661 1-4
+.mcp.json
+  s_cc22aa131ead51::t_4f8a6b5204760d 1-12
+.vscode/mcp.json
+  s_cc22aa131ead51::t_068dac1d8052c7 1-12
+opencode.jsonc
+  s_cc22aa131ead51::t_d3e213a4093edd 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0c6098ae959a776be8382548cbb27099cbc0b1f0",
+  "prompts": {},
+  "sessions": {
+    "s_cc22aa131ead51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0d1a0-59d8-7442-97ca-3cdec9d2f7f6",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
