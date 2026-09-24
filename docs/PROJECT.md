@@ -66,11 +66,44 @@ Core exports saved under `reports/labrika/`:
 - **Post-save processing:** After the user saves files, inventory the folder and offer to create a README or issue log from the artifacts
 - **Cross-referencing:** Correlate broken links with 4xx errors, markup errors with affected URLs, image issues with page templates
 
+## Code Intelligence (CodeGraph)
+
+CodeGraph is wired through project-local MCP configs so agents can query the repository as
+`codegraph_explore`. It is a developer aid, not a runtime dependency.
+
+```bash
+CODEGRAPH_TELEMETRY=0 codegraph init .     # build the git-ignored index once per checkout
+CODEGRAPH_TELEMETRY=0 codegraph status     # confirm "Index is up to date"
+```
+
+This repository is prose-only (Markdown plus `agents/openai.yaml`). The current CodeGraph run on
+this checkout indexed one file (`agents/openai.yaml`) and zero symbols, so Markdown content needs
+normal read and search rather than CodeGraph navigation. The `.codegraph/` index is machine-local
+and git-ignored; the MCP config files are committed. See `AGENTS.md` → Code intelligence for the
+wiring, commands, and telemetry rules.
+
 ## Repository Structure
 
 ```
 SKILL.md                        — Skill definition and full workflow
+AGENTS.md                       — Repository instructions and CodeGraph wiring guidance
 agents/openai.yaml              — OpenAI agent interface config
 references/report-checklist.md  — Export checklist and developer handoff template
 docs/PROJECT.md                 — This file
+.mcp.json, opencode.jsonc, .codex/, .cursor/, .vscode/ — Committed CodeGraph MCP wiring per client
+.codegraph/                     — Machine-local CodeGraph index (untracked, gitignored)
 ```
+
+## License And Attribution
+
+This repository carries no `LICENSE` file, so no license is asserted for its own content.
+
+`AGENTS.md` is organized following the DOX documentation framework at
+`https://github.com/agent0ai/dox`, recorded revision
+`765ae4ac02cc884eefcd41a3d0f71941721adb89`. DOX is licensed under the MIT License, Copyright
+(c) 2026 Agent Zero; the upstream license text is at
+`https://github.com/agent0ai/dox/blob/765ae4ac02cc884eefcd41a3d0f71941721adb89/LICENSE`. No DOX
+text was copied verbatim into this repository.
+
+CodeGraph itself is a separate tool from `https://github.com/colbymchenry/codegraph` and is not
+vendored or licensed here beyond its own upstream terms.
