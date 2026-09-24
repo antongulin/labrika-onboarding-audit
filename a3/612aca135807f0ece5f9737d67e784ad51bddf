@@ -1,0 +1,37 @@
+AGENTS.md
+  s_cc22aa131ead51::t_dc2cde4325fc3a 25
+  h_189d15dd58c223 4-16,18-24,26-27
+  s_cb677b2df5f54f::t_836d41a4d04630 17
+docs/PROJECT.md
+  s_cc22aa131ead51::t_a09765f689f52b 82-83,100,106-107
+  h_189d15dd58c223 69-81,84,89,93-94,96-99,101-105,108-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a3612aca135807f0ece5f9737d67e784ad51bddf",
+  "prompts": {},
+  "humans": {
+    "h_189d15dd58c223": {
+      "author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  },
+  "sessions": {
+    "s_cb677b2df5f54f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0cf82-de8d-7912-b4e3-22a1c9844beb",
+        "model": "gpt-6-sol"
+      },
+      "human_author": null
+    },
+    "s_cc22aa131ead51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0d1a0-59d8-7442-97ca-3cdec9d2f7f6",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
